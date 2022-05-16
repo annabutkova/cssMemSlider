@@ -7,25 +7,102 @@
 body {
     font-family: 'Roboto', sans-serif;
     background: #111;
-    padding: 2rem;
+    padding: 2em;
+    box-sizing: border-box;
+    /* overflow: hidden; */
 }
 
+
+
 h1 {
-    font-size: 6rem;
+    font-size: 3em;
     text-align: center;
     color: whitesmoke;
 }
-.slider-wrapper {
-    margin: 1rem auto;
-    width: 50%;
-    background: #fff;
-    height: 70vh;
-    padding: 1rem;
-    box-sizing: border-box;
+
+input[type="radio"] {
+    display: none;
 }
 
-.slide-1 {
-    background-image: url('./assets/mem-1.jpg');
+.slider-wrapper {
+    margin: 1em auto;
+    width: 40vw;
+    background: #fff;
+    height: calc(100vh - 12em);
+    padding: 1em;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: "img img""caption btn";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 1em;
+    align-items: center;
+}
+
+.slider-images {
+    grid-area: img;
+   width: 100%;
+   height: auto;
+}
+
+.slider-captions {
+    grid-area: caption;
+}
+
+.slider-controls {
+    grid-area: btn;
+}
+
+.slide-img {
+    display: none;
+
+}
+.slide-img img {
     width: 100%;
     height: auto;
+
+}
+
+
+
+.slide-img-1 {
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+
+.slide-caption {
+    display: none;
+}
+
+.slide-caption-1 {
+    display: block;
+}
+
+.slider-controls {
+    display: flex;
+justify-content: flex-end;
+}
+
+.slide-btn {
+    width: 3em;
+    height: 3em;
+    padding: 0.5em;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-right: 1.5em;
+}
+.slide-btn:last-of-type {
+    margin-right: 0;
+}
+
+.slide-btn span {
+    display: block;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: whitesmoke;
+    border: 0.3em solid #111;
+    box-sizing: border-box;
 }

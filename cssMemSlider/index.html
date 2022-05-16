@@ -12,26 +12,42 @@
 <body>
     <h1>CSS Mem Slider</h1>
     <div class="slider-wrapper">
-        <div class="slide slide-1">
-            <div class="slide-img slide-img-"></div>
-            <div class="slide-img slide-img-4"></div>
-            <div class="slide-img slide-img-4"></div>
-            <div class="slide-img slide-img-4"></div>
+
+        <input type="radio" name="slide-btn" class="slide-btn" id="slide-1" checked>
+        <input type="radio" name="slide-btn" class="slide-btn" id="slide-2">
+        <input type="radio" name="slide-btn" class="slide-btn" id="slide-3">
+        <input type="radio" name="slide-btn" class="slide-btn" id="slide-4">
+
+        <div class="slider-images">
+            <div class="slide-img slide-img-1">
+                <img src="./assets/mem-1.jpg" alt="">
+            </div>
+            <div class="slide-img slide-img-4">
+                <img src="./assets/mem-1.jpg" alt="">
+            </div>
+            <div class="slide-img slide-img-4">
+                <img src="./assets/mem-1.jpg" alt="">
+            </div>
+            <div class="slide-img slide-img-4">
+                <img src="./assets/mem-1.jpg" alt="">
+            </div>
         </div>
-        <div class="slide captions">
-            <label class="slide-caption" for="slide-1">Подпись слайда 1</label>
-            <label class="slide-caption" for="slide-2">Подпись слайда 2</label>
-            <label class="slide-caption" for="slide-3">Подпись слайда 3</label>
-            <label class="slide-caption" for="slide-4">Подпись слайда 4</label>
+
+        <div class="slider-captions">
+            <h4 class="slide-caption slide-caption-1">Подпись слайда 1</h4>
+            <h4 class="slide-caption slide-caption-2">Подпись слайда 2</h4>
+            <h4 class="slide-caption slide-caption-3">Подпись слайда 3</h4>
+            <h4 class="slide-caption slide-caption-4">Подпись слайда 4</h4>
         </div>
 
         <div class="slider-controls">
-            <input type="radio" name="slide-btn" class="slide-btn" id="slide-1">
-            <input type="radio" name="slide-btn" class="slide-btn" id="slide-2">
-            <input type="radio" name="slide-btn" class="slide-btn" id="slide-3">
-            <input type="radio" name="slide-btn" class="slide-btn" id="slide-4">
+            <label class="slide-btn" for="slide-1"><span></span></label>
+            <label class="slide-btn" for="slide-2"><span></span></label>
+            <label class="slide-btn" for="slide-3"><span></span></label>
+            <label class="slide-btn" for="slide-4"><span></span></label>
         </div>
     </div>
+
 </body>
 
 </html>
