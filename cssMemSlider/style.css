@@ -55,8 +55,10 @@ input[type="radio"] {
 }
 
 .slide-img {
-    display: none;
 
+/*     transition: all 0.2s ease-in-out;
+ */    display: none;
+height: 100%;
 }
 .slide-img img {
     width: 100%;
@@ -76,7 +78,11 @@ input[type="radio"] {
 #slide-4:checked ~ .slider-images .slide-img-4,
 #slide-5:checked ~ .slider-images .slide-img-5
  {
-    display: block;
+display: block;
+/*     transition: all 0.3s ease-in-out ; */
+    width: 100%;
+
+
 }
 #slide-1:checked ~ .slider-captions .slide-caption-1,
 #slide-2:checked ~ .slider-captions .slide-caption-2,
@@ -135,4 +141,56 @@ justify-content: flex-end;
 #slide-5:checked ~ .slider-controls .slide-btn-5 span 
 {
     background: #111;
+}
+
+@media (max-width:1900px) {
+    .slider-wrapper {
+        width: 60vw;
+
+    }
+    
+    .slider-images {
+        max-width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width:1200px) {
+    .slide-btn {
+        width: 2.5em;
+        height: 2.5em;
+    }
+    .slide-btn span {
+        width: 1.5em;
+        height: 1.5em;
+    }
+}
+
+@media (max-width:1024px) {
+    .slider-wrapper {
+        width: 90vw;
+        height: 95vh;
+        padding: 0;
+    }
+    
+    .slider-wrapper {
+        grid-template-areas: "img img" "btn btn" "caption caption" ;
+    }
+    
+    .slider-controls {
+        justify-content: center;
+    }
+    
+    .slider-images {
+        max-height: 60vh;
+        height: 100%;
+        width: auto;
+    
+    }
+    .slide-img img {
+
+        width: auto;
+        
+        max-width: 100%;
+    }
 }
