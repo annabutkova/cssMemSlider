@@ -103,16 +103,15 @@ justify-content: flex-end;
 .slide-btn:last-of-type {
     margin-right: 0;
 }
-.slide-btn:hover {
-    opacity: .5;
-}
-#slide-1:checked ~ .slider-controls .slide-btn-1:hover,
-#slide-2:checked ~ .slider-controls .slide-btn-2:hover,
-#slide-3:checked ~ .slider-controls .slide-btn-3:hover,
-#slide-4:checked ~ .slider-controls .slide-btn-4:hover, 
-#slide-5:checked ~ .slider-controls .slide-btn-5:hover 
+
+#slide-1:active ~ .slider-controls .slide-btn-1 span,
+#slide-2:active ~ .slider-controls .slide-btn-2 span,
+#slide-3:active ~ .slider-controls .slide-btn-3 span,
+#slide-4:active ~ .slider-controls .slide-btn-4 span, 
+#slide-5:active ~ .slider-controls .slide-btn-5 span 
 {
-    opacity: 1;
+
+    background: orange;
 }
 
 .slide-btn span {
@@ -123,6 +122,10 @@ justify-content: flex-end;
     background: whitesmoke;
     border: 0.3em solid #111;
     box-sizing: border-box;
+}
+
+.slide-btn:hover span {
+    border-color: orange;
 }
 
 #slide-1:checked ~ .slider-controls .slide-btn-1 span,
