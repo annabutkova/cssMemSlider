@@ -247,10 +247,27 @@ input[type="radio"] {
     .slide-caption {
         padding-right: 0;
     }
+    
+    
+    @keyframes scrolling {
+        0% {
+            margin-left: 100%;
+    
+        }
+    
+        100% {
+            margin-left: 0;
+    
+        }
+    }
+    
 }
 
 @media (max-width:500px) {
     .slider-wrapper {
         padding: 0.5rem;
     }
+    
+    
+    
 }
