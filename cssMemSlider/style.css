@@ -33,9 +33,9 @@ input[type="radio"] {
     box-sizing: border-box;
     display: grid;
     grid-template-areas: "img img""caption btn";
-    grid-template-columns: 55% 45%;
+    grid-template-columns:55% 45%;
     grid-template-rows: auto auto;
-    grid-gap: 1em;
+   grid-row-gap: 1rem;
     align-items: center;
 }
 
@@ -44,6 +44,7 @@ input[type="radio"] {
     width: 100%;
     height: auto;
     border: 0.2rem solid #111;
+    box-sizing: border-box;
 }
 
 .slider-captions {
