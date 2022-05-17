@@ -79,11 +79,15 @@ height: 100%;
 #slide-5:checked ~ .slider-images .slide-img-5
  {
 display: block;
-/*     transition: all 0.3s ease-in-out ; */
     width: 100%;
-
-
+    animation: fadeIn 1s;
 }
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
 #slide-1:checked ~ .slider-captions .slide-caption-1,
 #slide-2:checked ~ .slider-captions .slide-caption-2,
 #slide-3:checked ~ .slider-captions .slide-caption-3,
@@ -194,3 +198,7 @@ justify-content: flex-end;
         max-width: 100%;
     }
 }
+
+
+  
+  
